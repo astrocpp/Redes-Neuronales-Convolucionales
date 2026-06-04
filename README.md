@@ -1,61 +1,63 @@
-# 🧠 Seminario Práctico: Redes Neuronales Convolucionales (CNN)
+# 🧠 Seminario Práctico: Redes Neuronales Artificiales y Clasificación de Imágenes mediante CNN
 
-> Asignatura: Introducción a las Redes Neuronales | 2do Año Ingeniería Informática  
-> 🎯 **Objetivo:** Comprender arquitecturas de redes neuronales, implementar una CNN para clasificación de imágenes (MNIST) y documentar el proceso mediante código ejecutable y presentación académica.
-
----
-
-## 📚 1. Conceptos Teóricos Fundamentales
-
-###  ¿Qué es una Red Neuronal Artificial?
-Modelo computacional bioinspirado que emula el procesamiento del cerebro. Se basa en:
-- **Neuronas artificiales**: Unidades que reciben entradas, aplican pesos (`w`), suman un sesgo (`b`) y pasan el resultado por una función de activación.
-- **Aprendizaje**: Ajuste iterativo de pesos mediante `backpropagation` y optimizadores (Adam, SGD) para minimizar una función de pérdida.
-
-### 🔹 Funciones de Activación Clave
-| Función | Fórmula | Uso | Ventaja |
-|---------|---------|-----|---------|
-| **ReLU** | `f(x) = max(0, x)` | Capas ocultas | Eficiente, evita gradiente vanishing |
-| **Sigmoid** | `1/(1+e^-x)` | Salida binaria | Probabilística (0-1) |
-| **Softmax** | `e^xi / Σe^xj` | Salida multi-clase | Distribución de probabilidad |
-
-### 🔹 Arquitecturas Comparadas
-| Arquitectura | Tipo de Dato | Memoria | Paralelización | Uso Típico |
-|--------------|--------------|---------|----------------|------------|
-| **CNN** | Imágenes/Video | No aplica | Alta | Visión por computadora |
-| **RNN** | Secuencias cortas | Limitada | Baja | Series temporales |
-| **LSTM** | Secuencias largas | Excelente | Baja | NLP, traducción |
-| **Transformer** | Secuencias (texto) | Excelente | Muy Alta | Modelos de lenguaje (GPT, BERT) |
-
-### 🔹 ¿Por qué CNN para Imágenes?
-Las redes densas tradicionales aplanan la imagen, perdiendo **estructura espacial** y requiriendo millones de parámetros. Las CNN resuelven esto con:
-1. **Convolución**: Filtros que detectan bordes/texturas preservando la topología 2D.
-2. **Pooling**: Reduce dimensionalidad manteniendo características dominantes.
-3. **Compartición de pesos**: El mismo filtro se aplica en toda la imagen → menos parámetros, mayor generalización.
+**Autor:** Miguel A. Banteurt Blanco, Addel Vidal Garcia, Grabiel Ramos Martin
+**Asignatura:** Inteligencia Artificial  
+**Tema:** Introducción a las Redes Neuronales
 
 ---
 
-## 💻 2. Implementación Práctica (Google Colab)
+## 📋 Descripción
 
-El archivo `CNN_MNIST_Colab.ipynb` contiene:
-✅ Carga y visualización del dataset MNIST  
-✅ Preprocesamiento (normalización + canal de color)  
-✅ Arquitectura CNN capa por capa con comentarios técnicos  
-✅ Entrenamiento, evaluación y gráficas de convergencia  
-✅ Visualización de predicciones correctas/incorrectas  
-✅ Guardado del modelo `.h5`
+Este seminario presenta los conceptos fundamentales de las Redes Neuronales Artificiales (RNA), analiza las arquitecturas más importantes (CNN, RNN, LSTM, Transformer) y desarrolla un ejemplo práctico utilizando una Red Neuronal Convolucional (CNN) para clasificar imágenes del conjunto de datos MNIST.
 
-**Para ejecutar:**
+## 🎯 Objetivos
+
+- Presentar los conceptos fundamentales de las redes neuronales
+- Analizar las arquitecturas más importantes
+- Desarrollar un ejemplo práctico con CNN para clasificación de dígitos manuscritos
+
+## 📂 Contenido del Repositorio
+
+| Archivo | Descripción |
+|---------|-------------|
+| `Seminario_Redes_Neuronales.pdf` | Documento completo del seminario |
+| `CNN_MNIST.ipynb` | Notebook de Google Colab con el código ejecutable |
+| `generar_presentacion.py` | Script para generar la presentación PowerPoint |
+| `imagenes/` | Diagramas y visualizaciones |
+| `referencias/` | Bibliografía en formato BibTeX |
+
+## 🚀 Ejecución del Código
+
 1. Abre [Google Colab](https://colab.research.google.com)
-2. Sube `CNN_MNIST_Colab.ipynb` o copia el contenido celda por celda
-3. Ejecuta todo (`Runtime > Run all`)
-4. Descarga el notebook ejecutado para subirlo al repo
+2. Sube el archivo `CNN_MNIST.ipynb`
+3. Ejecuta todas las celdas (`Runtime` → `Run all`)
+4. Observa los resultados y gráficas
+
+## 📊 Resultados Esperados
+
+Después de 5 épocas de entrenamiento:
+- **Precisión de entrenamiento:** 98% - 99%
+- **Precisión de prueba:** 97% - 99%
+
+## 🏗️ Arquitecturas Cubiertas
+
+- **CNN:** Clasificación de imágenes
+- **RNN:** Datos secuenciales
+- **LSTM:** Secuencias largas con memoria
+- **Transformer:** Procesamiento paralelo y atención
+
+## 📚 Referencias Principales
+
+1. LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. *Nature*, 521(7553), 436–444.
+2. Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). ImageNet classification with deep convolutional neural networks.
+3. Vaswani, A., et al. (2017). Attention Is All You Need.
+
+## 👨‍💻 Autor
+
+**Miguel Ángel Banteurt Blanco**  
+Departamento de Ingeniería Informática  
+[Tu Universidad]
 
 ---
 
-## 📊 3. Presentación PowerPoint
-
-Ejecuta el script para generar la presentación automáticamente:
-```bash
-pip install python-pptx
-python generar_presentacion.py
+*Proyecto académico desarrollado para la asignatura de Inteligencia Artificial*
