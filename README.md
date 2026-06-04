@@ -1,6 +1,10 @@
 # 🧠 Seminario Práctico: Redes Neuronales Artificiales y Clasificación de Imágenes mediante CNN
 
-**Autor:** Miguel A. Banteurt Blanco, Addel Vidal Garcia, Grabiel Ramos Martin, Fernando David Mendez Viciedo
+**Autor:** Miguel A. Banteurt Blanco,
+Addel Vidal Garcia,
+Grabiel Ramos Martin,
+Fernando David Mendez Viciedo
+
 **Asignatura:** Inteligencia Artificial  
 **Tema:** Introducción a las Redes Neuronales
 
