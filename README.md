@@ -58,9 +58,10 @@ Después de 5 épocas de entrenamiento:
 
 ## 👨‍💻 Autor
 
-**Miguel Ángel Banteurt Blanco**  
-Departamento de Ingeniería Informática  
-[Tu Universidad]
+**Miguel A. Banteurt Blanco** 
+**Fernando David Viciedo** 
+**Addel Vidal Garcia** 
+**Grabiel Ramos Martin**
 
 ---
 
